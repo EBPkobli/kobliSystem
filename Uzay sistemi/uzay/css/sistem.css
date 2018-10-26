@@ -1,0 +1,162 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(../img/bg.jpeg);
+	background-size: cover;
+}
+.orta
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: transparent;
+}
+.orta:after
+{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 750px;
+	height: 750px;
+	border-radius: 50%;
+	border:5px solid #f00;
+	background:transparent;
+	transform-origin: center;
+}
+.orta .gunes
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: url(../img/gunes.png);
+	
+
+	box-shadow: -1px 0px 100px 20px rgba(255,155,0,0.5),
+	inset -1px 0px 100px 20px rgba(255,155,0,0.5);
+	animation: gunesDonus 100s linear infinite, gunesParlama 3s linear forwards infinite;
+
+}				
+
+.orta .gunes .dunya
+{
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 50%;
+	width: 400px;
+	height: 2px;
+	background:transparent;
+	transform-origin: left;
+	/*animation: rotasyon 10s linear infinite;*/
+}
+.orta .gunes .dunya:after
+{
+	content: '';
+	position: absolute;
+	top: -100px;
+	right: -75px;
+	
+
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	border:3px solid #fff;
+	background:transparent;
+	transform-origin: center;
+}
+.orta .gunes .dunya:before
+{
+	content: url(../img/dunya.png);
+	position: absolute;
+	top: -25px;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #00f;
+	box-shadow: 0 0 15px rgba(0,155,255,0.5),
+	0 0 30px rgba(0,155,255,0.5),
+	0 0 45px rgba(0,155,255,0.5),
+	0 0 60px rgba(0,155,255,0.5),
+	0 0 10px rgba(0,155,255,0.5);
+	animation: rotasyon 10s linear infinite;
+}
+
+.orta .gunes .dunya .ay
+{
+	position: absolute;
+	right: 25px;
+	width: 100px;
+	height: 3px;
+	background: transparent;
+	transform-origin: right;
+	animation: rotasyon 3s linear infinite;
+}
+.orta .gunes .dunya .ay:before
+{
+	content: url(../img/ay.png);
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+
+	box-shadow: 0 0 5px rgba(255,255,255,0.5),
+	0 0 10px rgba(255,255,255,0.5),
+	0 0 15px rgba(255,255,255,0.5);
+	animation: rotasyon 5s linear infinite;
+}
+@keyframes rotasyon
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+@keyframes gunesParlama
+{
+	0%
+	{
+		box-shadow: -1px 0px 30px 20px rgba(255,155,0,0.15),
+		inset -1px 0px 30px 20px rgba(255,155,0,0.15);
+	}
+	50%
+	{
+		box-shadow: -1px 0px 100px 20px rgba(255,155,0,0.5),
+		inset -1px 0px 100px 20px rgba(255,155,0,0.5);
+	}
+	100%
+	{
+		box-shadow: -1px 0px 30px 20px rgba(255,155,0,0.15),
+		inset -1px 0px 30px 20px rgba(255,155,0,0.15);
+	}
+}
+@keyframes gunesDonus
+{
+	0%
+	{
+		
+		transform: translate(-50%,-50%) rotate(0deg);
+		
+	}
+	100%
+	{
+		
+		transform: translate(-50%,-50%) rotate(360deg);
+	}	
+}

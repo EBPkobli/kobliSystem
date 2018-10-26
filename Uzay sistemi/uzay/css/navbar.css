@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /*scroll çıkmasın diye kapattım sil gör*/
+	font-family: 'Roboto', sans-serif;
+}
+
+.sol-nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 9%;
+	height: 100%;
+	background: #000;
+	opacity: .15;
+}
+.sol-nav:hover
+{
+	opacity: 1;
+}
+.sol-nav .btn-div
+{
+	width: 100%;
+	height: 12.5%;
+	line-height:25px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+}
+.sol-nav .btn-div:nth-child(1)
+{
+	margin-top: 25px;
+}
+
+.sol-nav .btn-div.active
+{
+	background: #eee;
+}
+.sol-nav .btn-div a
+{
+	position: absolute;
+	
+	transform: translate(-250%,55%);
+	color: #000;
+	text-decoration: none;
+	opacity: 0;
+	transition: .15s;
+}
+.sol-nav:hover .btn-div a
+{
+	transform: translate(-50%,-10%);
+	color: #fff;
+	opacity: 1;
+}
+
+.sol-nav:hover .btn-div.active a
+{
+	transform: translate(-50%,-10%);
+	color: #000;
+}
+.sol-nav:hover .btn-div a.checked
+{
+	color: #0c0;
+}
+.sol-nav .btn-div i
+{
+	display: block;
+	padding-top: 25px;
+	color: #333;
+	transition: .15s;
+}
+.sol-nav .btn-div i.checked
+{
+	color: #0e0;
+}
+
+.sol-nav:hover .btn-div i
+{
+	color: #fff;
+	font-size: 3em;
+}
+.sol-nav:hover .btn-div i.checked
+{
+	color: #0c0 !important;
+}
+.sol-nav:hover .btn-div.active i
+{
+	color: #000;
+	font-size: 3em;
+}
+

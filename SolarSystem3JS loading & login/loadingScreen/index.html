@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SAF CSS ANİMASYONU</title>
+	<link rel="stylesheet" type="text/css" href="loadingScreenCSS.css">
+	<script src="jquery c3.3.1.js"></script>
+	<script src="loadingScreenJS.js"></script>
+</head>
+
+<body>
+	<div class="loadingScreen">
+		<div class="container">
+			<div class="ilk_set">
+				<div class="yTop"></div>
+				<div class="yTop"></div>
+
+			</div>
+			<div class="ikinci_set">
+				<div class="yTop"></div>
+				<div class="yTop"></div>
+			</div>
+		</div>
+		<div class="loaderBar">
+			<div class="loader"></div>
+		</div>
+		<svg>
+			<defs>
+				<filter id="goo">
+					<feGaussianBlur stdDeviation="10" in="sourceGraphic" result="blur">
+					</feGaussianBlur>
+					<feColorMatrix mode="matrix" in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 24 -4" result="goo"></feColorMatrix>
+					<feBlend in="blur" in2="goo"></feBlend>
+				</filter>
+			</defs>
+		</svg>
+	</div>
+</body>
+
+</html>

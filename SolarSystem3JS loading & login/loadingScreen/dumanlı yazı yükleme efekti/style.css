@@ -1,0 +1,84 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+.duman
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.duman span
+{
+	position: relative;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	animation: animasyon 5s linear infinite;
+}
+.duman span:nth-child(1)
+{
+	animation-delay: .25s;
+}
+.duman span:nth-child(2)
+{
+	animation-delay: .5s;
+}
+.duman span:nth-child(3)
+{
+	animation-delay: .75s;
+}
+.duman span:nth-child(4)
+{
+	animation-delay: 1s;
+}
+.duman span:nth-child(5)
+{
+	animation-delay: 1.25s;
+}
+.duman span:nth-child(6)
+{
+	animation-delay: 1.5s;
+}
+.duman span:nth-child(7)
+{
+	animation-delay: 1.75s;
+}
+.duman span:nth-child(8)
+{
+	animation-delay: 2s;
+}
+.duman span:nth-child(9)
+{
+	animation-delay: 2.25s;
+}
+.duman span:nth-child(10)
+{
+	animation-delay: 2.5s;
+}
+
+@keyframes animasyon
+{
+	0%
+	{
+		filter: blur(0);
+	}
+	40%
+	{
+		filter: blur(20px);
+	}
+	80%
+	{
+		filter: blur(0);
+	}
+	100%
+	{
+		filter: blur(0);
+	}
+}
