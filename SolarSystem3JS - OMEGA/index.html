@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Solar System Alpha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="GUI/acilis_yazi.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="GUI/gui_style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="GUI/loadingScreenCSS.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="GUI/sag_altYazi.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main/mainStyle.css" />
+    <script src="libs/three.min.js"></script>
+    <script src="setting/setting.js"></script>
+    <script src="libs/xRingGeo.js"></script>
+    <script src="controller/kobliObje.js"></script>
+    <script src="controller/kobliController.js"></script>
+    <script src="controller/kobliCameraController.js"></script>
+    <script src="libs/OrbitControls.js"></script>
+    <script src="libs/jquery c3.3.1.js"></script>
+    <script src="main/mainJS.js"></script>
+    <script src="libs/stats.min.js"></script>
+    <script src="GUI/events.js"></script>
+    <script src="GUI/acilis_ekran.js"></script>
+    <script src="GUI/gui_javascript.js"></script>
+    <script src="GUI/loadingScreenJS.js"></script>
+
+</head>
+
+<body>
+    <audio id="btnTik">
+        <!-- <source src="sounds/" type="audio/ogg"> -->
+        <source src="sounds/butonTik.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="btnsOpen">
+            <!-- <source src="sounds/" type="audio/ogg"> -->
+            <source src="sounds/butonAc2.mp3" type="audio/mpeg">
+        </audio>
+
+    <div class="canvasMouse"></div>
+
+    <input type="range" min="1" max="1000" value="500" class="slider" id="speedRange">
+    <div class="loadingScreen">
+        <div class="loaderBar">
+            <div class="loader"></div>
+        </div>
+        <div class="glowing">
+            <span id="top1"></span>
+            <span id="top2"></span>
+            <span id="top3"></span>
+        </div>
+    </div>
+
+    <div class="yaziAnimContainer">
+        <p id="birinciAnim" class="animYazi">Welcome</p>
+        <p id="ikinciAnim" class="animYazi"> to </p>
+        <p id="ucuncuAnim" class="damgaYazi">kobliSystem</p>
+    </div>
+
+    <div class="settingMenuContainer">
+        <div class="rotate brdr menuTitle">
+            <p>MENU</p>
+        </div>
+        <div class="rotate brdr options option1"><img src="" alt="" class="imgSet"></div>
+        <div class="rotate brdr options option2"><img src="" alt="" class="imgNew"></div>
+        <div class="rotate brdr options option3"><img src="" alt="" class="imgLine"></div>
+        <div class="rotate brdr options option4"><img src="" alt="" class="imgOrb"></div>
+        <div class="rotate brdr options not-active option5"><img src="" alt="" class="imgInfo"></div>
+    </div>
+    <div class="camZoomContainer">
+        <div class="options ustCizgi"> <img src="" alt="" class="imgUp"> </div>
+        <div class="ortaCizgi">
+            <div class="slideNokta">
+
+            </div>
+        </div>
+        <div class="options altCizgi"> <img src="" alt="" class="imgDown"></div>
+    </div>
+
+    <p class="parlatAnim">kobliSystem</p>
+
+    
+
+</body>
+
+</html>

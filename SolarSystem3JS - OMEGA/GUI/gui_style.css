@@ -1,0 +1,264 @@
+@import url('font/Roboto-Regular.ttf');
+.camZoomContainer
+{
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    right: 5%;
+    width: 6%;
+    height: 70%;
+    z-index: 3;
+    opacity: 0.45;
+    transition: .25s;
+    display: none;
+}
+.camZoomContainer:hover
+{
+    opacity: 1;
+}
+.camZoomContainer .ustCizgi
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 15%;
+    background-color: #333;
+    border-radius:20%;
+    z-index: 6;
+    cursor: pointer;
+    transition: .15s;
+}
+.camZoomContainer .ortaCizgi
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+    height: 90%;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 4;
+    transition: .15s;
+}
+.camZoomContainer .ortaCizgi .slideNokta
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    box-shadow: 0px 0px 5px #999;
+    background: #333;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 6;
+}
+.camZoomContainer .ortaCizgi .slideNokta:hover
+{
+    box-shadow: 0px 0px 15px #ccc;
+}
+.camZoomContainer .altCizgi
+{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 15%;
+    background-color: #333;
+    border-radius: 20%;
+    z-index: 6;
+    cursor: pointer;
+    transition: .15s;
+}
+
+
+
+.settingMenuContainer
+{
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 2%;
+    width: 10%;
+    height: 70%;
+    z-index: 3;
+    transition: .5s;
+
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    letter-spacing: 1px;
+    opacity: .25;
+
+}
+.settingMenuContainer:hover{
+    opacity: 1;
+}
+.settingMenuContainer .rotate
+{
+    transition: .5s;
+    
+}
+.settingMenuContainer .brdr
+{
+    border-radius: 15%;
+}
+.settingMenuContainer:hover .rotate
+{
+    transform: rotateY(0deg);
+}
+.settingMenuContainer .menuTitle
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 10%;
+    background: #ddd;
+    box-shadow: 0 0 8px white;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 1px #000;
+    cursor: default;
+    user-select: none;
+}
+.settingMenuContainer .menuTitle p{
+    display: inline;
+}
+.settingMenuContainer .option1
+{
+    position: absolute;
+    top: 13%;
+    width: 70%;  
+    height: 15%;
+    left: 15%;
+    background: #666;
+    transform-origin: top;
+    opacity: 0;
+    transition: 0.25s;
+    
+
+}
+
+.settingMenuContainer .option2
+{
+    position: absolute;
+    top: 31%;
+    width: 70%;  
+    height: 15%;
+    left: 15%;
+    background: #666;
+    opacity: 0;
+    transform-origin: top;
+    transition: 0.25s;
+}
+
+.settingMenuContainer .option3
+{
+    position: absolute;
+    top: 49%;
+    width: 70%;  
+    height: 15%;
+    left: 15%;
+    background: #666;
+    opacity: 0;
+    transform-origin: top;
+    transition: 0.25s;
+}
+.settingMenuContainer .option4
+{
+    position: absolute;
+    top: 67%;
+    width: 70%;  
+    height: 15%;
+    left: 15%;
+    background: #666;
+    opacity: 0;
+    transform-origin: top;
+    transition: 0.25s;
+}
+.settingMenuContainer .option5
+{
+    position: absolute;
+    top: 85%;
+    width: 70%;  
+    height: 15%;
+    left: 15%;
+    background: #666;
+    opacity: 0;
+    transform-origin: top;
+    transition: 0.25s;
+}
+img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+}
+@keyframes butonClickAnim{
+	0%
+	{
+        box-shadow: 0 0 0 0 rgba(255,255,255,0), 0 0 0 0 rgba(255,255,255,0);
+		
+	}
+	50%
+	{
+        box-shadow: 0 0 0 5px rgba(255,255,255,0.25), 0 0 0 6px rgba(255,255,255,.25);
+       
+		
+	}
+	100%
+	{
+        box-shadow: 0 0 0 0 rgba(255,255,255,0), 0 0 0 0 rgba(255,255,255,0);
+	}
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    bottom: 2%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.15;
+    transition: opacity .2s;
+    border-radius: 1%;
+    border-radius: 25px;
+    z-index: 7;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+  
+    cursor: pointer;
+    border-radius: 50%;
+    background: url('../ico/contrast-24.png');
+    z-index: 8;
+}
+
+
+@media only screen and (min-width:825px)
+{
+    .camZoomContainer
+    {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+

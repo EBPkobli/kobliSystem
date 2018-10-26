@@ -1,0 +1,92 @@
+@import "../font/Roboto-Regular.ttf";
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.yaziAnimContainer
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 1;
+	transition: 2s;
+	z-index: 10;
+	overflow: hidden;
+}
+p.damgaYazi
+{
+	position: absolute;
+	font-size: 3em;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+	letter-spacing: 4px;
+	font-family: 'Roboto', sans-serif;
+	user-select: none;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 0 0 15px white;
+	opacity: 0;
+}
+.animYazi
+{
+	position: absolute;
+	font-size: 3em;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+	user-select: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: white;
+	text-shadow: 0 0 2px white;
+	font-family: 'Roboto', sans-serif;
+	opacity: 0;
+}
+#birinciAnim
+{
+	animation: yaziGecis 3s linear 7s forwards;
+}
+#ikinciAnim
+{
+	animation: yaziGecis 3s linear 10s forwards;
+}
+#ucuncuAnim
+{
+	animation: damgaYaziAnim 5s linear 13s forwards;
+}
+@keyframes yaziGecis
+{
+	0%
+	{
+		opacity: 0.5;
+
+	}
+	50%
+	{
+		opacity: 1;
+	
+	}
+	100%
+	{
+		opacity: 0;
+
+	}
+}
+@keyframes damgaYaziAnim
+{
+	0%
+	{
+		opacity: 0.25;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body
+{
+    background: #000;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    bottom: 2%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.15;
+    transition: opacity .2s;
+    border-radius: 1%;
+    border-radius: 25px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+  
+    cursor: pointer;
+    border-radius: 50%;
+    background: url('contrast-24.png');
+}
+</style>
+</head>
+
+<body>
+
+
+    <input type="range" min="1" max="500" value="250" class="slider" id="speedRange">
+    <script>
+        var deger = 1;
+        $('.slider#speedRange').on('input', function () {
+            console.log($(this).val() + " " + deger);
+            console.log($(this).val());
+            deger = $(this).val();
+        });
+    </script>
+
+</body>
+
+</html>
